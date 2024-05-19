@@ -4,7 +4,12 @@ const Route = require("./Routes/Routes");
 const dotenv = require("dotenv");
 const dbConnect = require("./middleware/dbConnection");
 const app = express();
-app.use(cors({ origin: "https://intern-frontend-kh3x.vercel.app" }));
+app.use(
+  cors({
+    origin:
+      "https://intern-frontend-kh3x-qfl9qedxu-bhuban-magars-projects.vercel.app",
+  })
+);
 app.use(express.json()); //middleware to handle json data
 require("dotenv").config(); //middleware to handle env file
 app.use(express.urlencoded({ extended: true })); //form data handeling middleware
