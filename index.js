@@ -7,7 +7,7 @@ const app = express();
 app.use(
   cors({
     origin:
-      "https://intern-frontend-kh3x.vercel.app/",
+      "https://intern-frontend-kh3x.vercel.app",
   })
 );
 app.use(express.json()); //middleware to handle json data
